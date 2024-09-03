@@ -1,4 +1,4 @@
-# Mansarovar
+# Mansarovar Office
         ///// website open or not //////
 /**
  * Checks if a website is accessible (returns HTTP status code).
@@ -16,7 +16,7 @@ function CHECK_WEBSITE_STATUS(url) {
   }
 }
 
-/*****
+/*****/
 
 This will return the HTTP status code of the website. Common status codes are:
 ////  =CHECK_WEBSITE_STATUS() Google sheets new function 
@@ -27,9 +27,10 @@ This will return the HTTP status code of the website. Common status codes are:
 200: The website is open and accessible.
 4xx or 5xx: There is a problem with accessing the website (e.g., page not found, server error).
 
-****/
+/*****/
 
 /////// Website Email Find //////
+
 /**
  * Fetches the HTML content of a website.
  * @param {string} url The URL of the website.
@@ -72,9 +73,9 @@ function findSupportEmail(websiteURL) {
   return extractSupportEmail(htmlContent);
 }
 
-/*******
+/*******/
 
 Google New Function =findSupportEmail()
 
-*******/
+/*******/
 
