@@ -6,6 +6,7 @@
  * @return {string} The HTTP status code or error message.
  * @customfunction
  */
+ 
 function CHECK_WEBSITE_STATUS(url) {
   try {
     var response = UrlFetchApp.fetch(url, {muteHttpExceptions: true});
