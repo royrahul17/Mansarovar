@@ -29,7 +29,7 @@ This will return the HTTP status code of the website. Common status codes are:
 
 /*****/
 
-/////// Website Email Find //////
+        /////// Website Email Find //////
 
 /**
  * Fetches the HTML content of a website.
