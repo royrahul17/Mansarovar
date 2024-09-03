@@ -17,6 +17,7 @@ function CHECK_WEBSITE_STATUS(url) {
 }
 
 /*****
+
 This will return the HTTP status code of the website. Common status codes are:
 ////  =CHECK_WEBSITE_STATUS() Google sheets new function 
 200 for a successful response (website is open).
@@ -34,6 +35,7 @@ This will return the HTTP status code of the website. Common status codes are:
  * @param {string} url The URL of the website.
  * @return {string} The HTML content of the website.
  */
+ 
 function fetchWebsiteContent(url) {
   try {
     var response = UrlFetchApp.fetch(url);
@@ -44,10 +46,13 @@ function fetchWebsiteContent(url) {
 }
 
 /**
+
  * Extracts support email addresses from HTML content.
  * @param {string} html The HTML content of the website.
  * @return {string} The support email address found in the HTML content.
+   
  */
+
 function extractSupportEmail(html) {
   var emailPattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
   var matches = html.match(emailPattern);
@@ -55,17 +60,21 @@ function extractSupportEmail(html) {
 }
 
 /**
+
  * Finds the support email address for a website.
  * @param {string} websiteURL The URL of the website.
  * @return {string} The support email address found on the website.
  * @customfunction
  */
+ 
 function findSupportEmail(websiteURL) {
   var htmlContent = fetchWebsiteContent(websiteURL);
   return extractSupportEmail(htmlContent);
 }
 
 /*******
+
 Google New Function =findSupportEmail()
+
 *******/
 
